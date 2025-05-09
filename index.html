@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -124,10 +125,6 @@
       display: none;
       padding-bottom: 1rem;
     }
-    .accordion-container h2 {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -182,15 +179,19 @@
 
   <section class="accordion-section">
     <div class="accordion-container">
-      <h2>POURQUOI FOOTMAG ?</h2>
-      <p>Footmag est un projet de journal sportif. Dans l’exercice de la rédaction d’article du sport, je m’appuierai sur deux axes principaux, mon club, l’Union Saint Bruno, principalement sur ma catégorie u17, mais aussi les Girondins de Bordeaux, mon club de cœur.</p>
+      <h3>POURQUOI FOOTMAG ? <span>+</span></h3>
+      <div class="accordion-content">
+        <p>Footmag est un projet de journal sportif. Dans l’exercice de la rédaction d’article du sport, je m’appuierai sur deux axes principaux, mon club, l’Union Saint Bruno, principalement sur ma catégorie u17, mais aussi les Girondins de Bordeaux, mon club de cœur.</p>
+      </div>
+
       <h3>GIRONDINS DE BORDEAUX <span>+</span></h3>
       <div class="accordion-content">
-        <p>Contenu à développer…</p>
+        <p>Une moyenne d’articles hebdomadaires, afin de garder un oeil sur les actus du club, avec un résumé de chaque journée.</p>
       </div>
-      <h3>UNION SAINT BRUNO <span>+</span></h3>
-      <div class="accordion-content">
-        <p>Contenu à développer…</p>
+
+      <h3>UNION SAINT BRUNO <span>–</span></h3>
+      <div class="accordion-content" style="display: block;">
+        <p>Surement plus d’articles, avec plus de précisions, la catégorie des u17 de Saint Bruno sera le sujet principal de footmag33.</p>
       </div>
     </div>
   </section>
@@ -200,11 +201,22 @@
   </footer>
 
   <script>
-    // Script pour dérouler les blocs
     document.querySelectorAll('.accordion-container h3').forEach(item => {
       item.addEventListener('click', () => {
+        const allContents = document.querySelectorAll('.accordion-content');
+        const allSpans = document.querySelectorAll('.accordion-container h3 span');
         const content = item.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        const span = item.querySelector('span');
+
+        const isVisible = content.style.display === 'block';
+
+        allContents.forEach(c => c.style.display = 'none');
+        allSpans.forEach(s => s.textContent = '+');
+
+        if (!isVisible) {
+          content.style.display = 'block';
+          span.textContent = '–';
+        }
       });
     });
   </script>
