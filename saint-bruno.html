@@ -29,19 +29,46 @@
       text-align: center;
       margin-top: 2rem;
     }
-    article {
-      max-width: 800px;
+    .contenu {
+      max-width: 1100px;
       margin: 2rem auto;
+      display: flex;
+      gap: 2rem;
+    }
+    .article-principal {
+      flex: 2;
       background: white;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    article h2 {
+    .article-principal h2 {
       color: #2c3e50;
     }
-    article p {
+    .article-principal p {
       line-height: 1.6;
+    }
+    .encart-photo {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      height: fit-content;
+    }
+    .encart-photo img {
+      max-width: 100%;
+      height: auto;
+      border: 4px solid #2c3e50;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .encart-photo p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.5rem;
     }
     footer {
       text-align: center;
@@ -64,22 +91,25 @@
 
   <h1>Rubrique : Union Saint Bruno</h1>
 
-  <article>
-    <h2>L’épopée en coupe continue !</h2>
-
-    <div style="float: right; width: 300px; margin: 0 0 1rem 2rem; text-align: center;">
-      <img src="equipe-u17.jpg" alt="Équipe U17 Saint Bruno" style="width: 100%; border: 4px solid #2c3e50; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-      <p style="font-size: 0.85rem; color: #555;">Rive Droite 1-1 (1-2) TAB Union Saint Bruno<br><em>Crédit photo : USB</em></p>
+  <div class="contenu">
+    <!-- Article principal -->
+    <div class="article-principal">
+      <h2>L’épopée en coupe continue !</h2>
+      <p><strong>Date :</strong> 9 mai 2025</p>
+      <p>Les U17 de Saint-Bruno, fraîchement revenus de vacances, ne bénéficieront que d’une seule séance d’entraînement cette semaine, en raison de la fermeture du stade ce jeudi 8 mai.</p>
+      <p>L’adversaire du week-end n’est autre que Bordeaux St-Jean, déjà affronté en début de saison avec une large victoire 1-5 des Verts à l’extérieur. Une reprise plutôt courte donc, avant une rencontre qui servira surtout à préparer la grosse échéance à venir : la demi-finale de la Coupe du District face au Talence FC.</p>
+      <p>Un adversaire déjà croisé en mars dernier, lors d’un match où les U17 se sont inclinés 1-2 — une rencontre où on auraient pu espérer mieux. Pour rappel, les deux derniers adversaires des Verts en Coupe du District, Arcachon (en quarts) et Rive Droite (en demies), avaient eux aussi été rencontrés en championnat : victoire 2-1 contre Arcachon en championnat, et victoire 3-2 en coupe. Rive Droite eux, ont reussi à mettre en echec les u17 de Saint-Bruno 3-1 en championnat. </p>
+      <p>Enfin c'est en coupe que les Verts ont pris leur revanche face à Rive Droite à l’issue d’un match tendu (1-1), puis d’une séance de tirs au but victorieuse (2-1). Une qualification arrachée dans chaque duel, et une tension présente sur et en dehors du terrain.</p>
+      <p>Dimanche 18 mai, la deuxième manche face à Talence se jouera à nouveau à l’extérieur. Les deux équipes se connaissent bien. Talence est une formation plus physique que technique, rapide en projection mais moins solide dans la conservation du ballon.</p>
+      <p>Saint-Bruno gardera son plan de jeu, mais devra être plus tranchant dans les derniers mètres — une efficacité qui lui fait parfois défaut. Les U17 devront encore élever leur niveau à mesure que la compétition avance. Et cela passe d’abord par un bon résultat ce week-end face à Bordeaux St-Jean.</p>
     </div>
 
-    <p><strong>Date :</strong> 9 mai 2025</p>
-    <p>Les U17 de Saint-Bruno, fraîchement revenus de vacances, ne bénéficieront que d’une seule séance d’entraînement cette semaine, en raison de la fermeture du stade ce jeudi 8 mai.</p>
-    <p>L’adversaire du week-end n’est autre que Bordeaux St-Jean, déjà affronté en début de saison avec une large victoire 1-5 des Verts à l’extérieur. Une reprise plutôt courte donc, avant une rencontre qui servira surtout à préparer la grosse échéance à venir : la demi-finale de la Coupe du District face au Talence FC.</p>
-    <p>Un adversaire déjà croisé en mars dernier, lors d’un match où les U17 se sont inclinés 1-2 — une rencontre où on auraient pu espérer mieux. Pour rappel, les deux derniers adversaires des Verts en Coupe du District, Arcachon (en quarts) et Rive Droite (en demies), avaient eux aussi été rencontrés en championnat : victoire 2-1 contre Arcachon en championnat, et victoire 3-2 en coupe. Rive Droite eux, ont reussi à mettre en echec les u17 de Saint-Bruno 3-1 en championnat. </p>
-    <p>Enfin c'est en coupe que les Verts ont pris leur revanche face à Rive Droite à l’issue d’un match tendu (1-1), puis d’une séance de tirs au but victorieuse (2-1). Une qualification arrachée dans chaque duel, et une tension présente sur et en dehors du terrain.</p>
-    <p>Dimanche 18 mai, la deuxième manche face à Talence se jouera à nouveau à l’extérieur. Les deux équipes se connaissent bien. Talence est une formation plus physique que technique, rapide en projection mais moins solide dans la conservation du ballon.</p>
-    <p>Saint-Bruno gardera son plan de jeu, mais devra être plus tranchant dans les derniers mètres — une efficacité qui lui fait parfois défaut. Les U17 devront encore élever leur niveau à mesure que la compétition avance. Et cela passe d’abord par un bon résultat ce week-end face à Bordeaux St-Jean.</p>
-  </article>
+    <!-- Colonne droite avec image -->
+    <aside class="encart-photo">
+      <img src="images/equipe-u17.jpg" alt="Équipe U17 Saint Bruno">
+      <p>L'équipe U17 de l'Union Saint Bruno<br><em>Crédit photo : USB</em></p>
+    </aside>
+  </div>
 
   <footer>
     &copy; 2025 FootMag33 — Tous droits réservés.
