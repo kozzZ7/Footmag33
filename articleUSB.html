@@ -45,14 +45,14 @@
       gap: 2rem;
       padding: 2rem;
     }
-    .article-card {
-      background: white;
-      border-radius: 12px;
-      max-width: 300px;
-      padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.2s;
+   .article-card {
+  background: white;
+  border-radius: 12px;
+  max-width: 350px; /* Agrandissement */
+  padding: 1.5rem;   /* Un peu plus d'espace intérieur */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s;
     }
     .article-card:hover {
       transform: scale(1.02);
@@ -89,6 +89,12 @@
       background: #e1e1e1;
       border-top: 2px solid black;
     }
+    .article-card .date {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+   }   
   </style>
 </head>
 <body>
@@ -109,13 +115,15 @@
     <!-- Exemple d'article 1 -->
     <div class="article-card">
       <img src="photo-article1.jpg" alt="Photo article 1">
-      <h2>L'époppée en coupe continue ! 9 mai</h2>
+       <p class="date">9 mai 2025</p>
+      <h2>L'époppée en coupe continue !</h2>
       <p>Direction les demi-finales, face à un adversaire déjà connu...</p>
       <a href="saint-bruno.html">Lire l'article</a>
     </div>
     <div class="article-card">
       <img src="photo-U17.jpg" alt="Photo article 2">
-      <h2>Une victoire en guise de préparation. 13 mai</h2>
+       <p class="date">13 mai 2025</p>
+      <h2>Une victoire en guise de préparation.</h2>
       <p>Retour sur la victoire du weekend, et la continuité de la préparation du match de coupe.</p>
       <a href="saint-bruno2.html">Lire l'article</a>
     </div>
