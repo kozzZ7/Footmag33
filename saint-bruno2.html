@@ -13,6 +13,7 @@
       padding: 0;
       color: #1a1a1a;
     }
+
     header {
       background-color: #e1e1e1;
       padding: 1rem 2rem;
@@ -21,43 +22,47 @@
       justify-content: space-between;
       align-items: center;
     }
+
     header img {
       height: 60px;
       margin-right: 10px;
     }
+
     h1 {
       text-align: center;
       margin-top: 2rem;
     }
+
     .contenu {
       max-width: 1100px;
       margin: 2rem auto;
-      display: flex;
-      gap: 2rem;
     }
+
     .article-principal {
-      flex: 2;
       background: white;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     .article-principal h2 {
       color: #2c3e50;
     }
+
     .article-principal p {
       line-height: 1.6;
     }
+
     .encart-photo {
-      flex: 1;
       background-color: #f9f9f9;
       padding: 1rem;
+      margin: 2rem 0;
       border: 1px solid #ccc;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
-      height: fit-content;
     }
+
     .encart-photo img {
       max-width: 100%;
       height: auto;
@@ -65,11 +70,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    .encart-photo p {
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 0.5rem;
-    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -92,17 +93,16 @@
   <h1>Rubrique : Union Saint Bruno</h1>
 
   <div class="contenu">
-    <!-- Article principal -->
     <div class="article-principal">
       <h2>Une victoire en guise de préparation</h2>
       <p><strong>Date :</strong> 13 mai 2025</p>
       <p>Une victoire acquise avec facilité, en effet les u17 ont vaincu l’USJ sur le score de 4-1, seulement le plan de jeu a été compliqué à assimiler par les joueurs, pourtant ce qui avait semblé être acquis lors des précédentes rencontres semble aujourd'hui peut-être pas assez préparé encore. Les joueurs et le staff auront encore deux entrainements pour monter en puissance cette semaine. Avec le sérieux et l’envie adéquate, les joueurs et les coachs devraient afficher un plan de jeu plus solide ce week-end, et une prestation digne d’une demi-finale. Maintenant que les joueurs on prit conscience que leur implication aux entrainements avait un réel impact sur les prestations collectives, ils n’ont qu’une seule chose en tête, se préparer de façon disciplinée et appliqué pour arriver dimanche à Talence, prêts.</p>
-    </div>
 
-    <!-- Colonne droite avec image -->
-    <aside class="encart-photo">
-      <img src="photo-U17.jpg" alt="Équipe U17 Saint Bruno">
-    </aside>
+      <!-- Image intégrée dans l'article -->
+      <div class="encart-photo">
+        <img src="photo-U17.jpg" alt="Équipe U17 Saint Bruno">
+      </div>
+    </div>
   </div>
 
   <footer>
@@ -110,3 +110,4 @@
   </footer>
 </body>
 </html>
+
